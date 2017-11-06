@@ -1,0 +1,13 @@
+### 编译
+### 因为只有一个cpp文件，懒得写CMakeLists.txt
+### 直接一句话执行了
+
+### 代码里默认打开宏定义开关，打印信息
+g++ -o a ControlPrintf.cpp
+
+### 若测试关闭宏定义开关功能，关闭打印功能
+### 需要在ControlPrintf.cpp文件开头，注释#define _DEBUG_这一行
+### ===此时相当于关闭宏开关
+g++ -o b ControlPrintf.cpp
+
+### 通过a,b执行对比，可直观感受到宏定义开关的功能
